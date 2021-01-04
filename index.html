@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel=" stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css " integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm " crossorigin="anonymous ">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <table class="table table-border table-dark bg-dark table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <td colspan="4">
+                        <input type="text" class="text-dark bg-light text-right" id="output" name="output" value="" disabled>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="button" onclick="display('+')" class="btn btn-info" value="+"></td>
+                    <td><input type="button" onclick="display('-')" class="btn btn-info" value="-"></td>
+                    <td><input type="button" onclick="display('*')" class="btn btn-info" value="*"></td>
+                    <td><input type="button" onclick="display('/')" class="btn btn-info" value="/"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="display('1')" class="btn btn-white" value="1"></td>
+                    <td><input type="button" onclick="display('2')" class="btn btn-white" value="2"></td>
+                    <td><input type="button" onclick="display('3')" class="btn btn-white" value="3"></td>
+                    <td rowspan="4"><input type="button" onclick="solve()" class="btn btn-primary eq mt-2" value="="></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="display('4')" class="btn btn-white" value="4"></td>
+                    <td><input type="button" onclick="display('5')" class="btn btn-white" value="5"></td>
+                    <td><input type="button" onclick="display('6')" class="btn btn-white" value="6"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="display('7')" class="btn btn-white" value="7"></td>
+                    <td><input type="button" onclick="display('8')" class="btn btn-white" value="8"></td>
+                    <td><input type="button" onclick="display('9')" class="btn btn-white" value="9"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" onclick="display('0')" class="btn btn-white" value="0"></td>
+                    <td><input type="button" onclick="display('.')" class="btn btn-white" value="."></td>
+                    <td><input type="button" onclick="clr()" class="btn btn-danger " value="C"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/calc.js"></script>
+</body>
+
+</html>
